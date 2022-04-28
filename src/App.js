@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+
 import './App.css';
+import RestoDetails from './Component/RestoDetails';
+import RestoCreate from './Component/RestoCreate'
+import RestoList from './Component/RestoList'
+import RestoSearch from './Component/RestoSearch'
+import RestoUpdate from './Component/RestoUpdate'
+
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import Home from './Component/Home';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <BrowserRouter>
+  <Home/>
+ 
+  <Routes>
+    
+    
+    <Route path='/Create' element={<RestoCreate/>} />
+    <Route path='/Details' element={<RestoDetails/>} />
+    <Route path='/List' element={<RestoList/>} />
+    <Route path='/Search' element={<RestoSearch/>} />
+    <Route path='/Update' element={<RestoUpdate/>} />
+    
+  </Routes>
+  </BrowserRouter>
   );
 }
 
