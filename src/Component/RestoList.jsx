@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 
+import {Link} from 'react-router-dom'
+
+
 const RestoList = () => {
   const [list, setList] = useState([]);
 
@@ -30,6 +33,7 @@ const RestoList = () => {
               <th>Address</th>
               <th className="bg-warning">Rating</th>
               <th className="bg-primary">Email</th>
+              <th className="bg-warning">Opration</th>
             </tr>
           </thead>
       <tbody>
@@ -44,6 +48,7 @@ const RestoList = () => {
                 <td>{ele.address}</td>
                 <td>{ele.rating}</td>
                 <td>{ele.email}</td>
+                <td> <Link  to={"/update/"+ele.id}>Edit</Link></td>
               </tr>
              
             )
@@ -53,6 +58,7 @@ const RestoList = () => {
          </tbody>
           </table>
       </div>
+    
     </>
   );
 };

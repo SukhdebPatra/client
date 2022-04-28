@@ -22,7 +22,7 @@ function App() {
 
         <Route path='/List' element={<RestoList />} />
         <Route path='/Search' element={<RestoSearch />} />
-        <Route path='/Update' element={<RestoUpdate />} />
+        <Route path='/Update/:id'element={<RestoUpdate />} />
 
       </Routes>
     </BrowserRouter>

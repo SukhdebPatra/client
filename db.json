@@ -55,6 +55,34 @@
       "rating": "3.2",
       "address": "Ranchi",
       "id": 8
+    },
+    {
+      "name": "Kfc",
+      "email": "Kfc1@gmail.com",
+      "rating": "4.5",
+      "address": "Banglore",
+      "id": 9
+    },
+    {
+      "name": "Beena Hot Dogs",
+      "email": "Beenahotdogs@gmail.com",
+      "rating": "5.0",
+      "address": "Chaibasa Bandhpara",
+      "id": 10
+    },
+    {
+      "name": "Sumit chaha chai wale",
+      "email": "Sumitchacha@gmail.com",
+      "rating": "1.0",
+      "address": "chaibasa turitola",
+      "id": 11
+    },
+    {
+      "name": "raja Hotel",
+      "email": "hotel@gmail.com",
+      "rating": "2.0",
+      "address": "badibazar",
+      "id": 12
     }
   ]
 }
