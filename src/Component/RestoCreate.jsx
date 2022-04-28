@@ -69,12 +69,7 @@ const RestoCreate = () => {
           Add Restaurant
         </button>
       </form>
-      <RestoUpdate
-        name={name}
-        email={email}
-        rating={rating}
-        address={address}
-      />
+     
     </div>
   );
 };
