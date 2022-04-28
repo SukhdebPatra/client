@@ -14,9 +14,7 @@ const Home = () => {
           <li className="nav-item">
             <Link className="nav-link" to="/List">RestroList</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/Details">Details</Link>
-          </li>
+          
           <li className="nav-item">
             <Link className="nav-link" to="/search">Search</Link>
           </li>

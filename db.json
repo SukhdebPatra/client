@@ -4,36 +4,57 @@
       "id": 1,
       "name": "Pissahut",
       "address": "chaibasa",
-      "ratinng": "4.5",
+      "rating": "4.5",
       "email": "pizzathut@gmail.com"
     },
     {
       "id": 2,
       "name": "dominos",
       "address": "tata",
-      "ratinng": "4.3",
+      "rating": "4.3",
       "email": "dominos@gmail.com"
     },
     {
       "id": 3,
       "name": "MacDonald",
       "address": "jamshedpur",
-      "ratinng": "4.5",
+      "rating": "4.5",
       "email": "MacDonald@gmail.com"
     },
     {
       "id": 4,
       "name": "walfare",
       "address": "bhubneswer",
-      "ratinng": "3.0",
+      "rating": "3.0",
       "email": "walfare@gmail.com"
     },
     {
       "id": 5,
       "name": "SBrstro",
       "address": "chaibasa",
-      "ratinng": "5.0",
+      "rating": "5.0",
       "email": "SB@gmail.com"
+    },
+    {
+      "id": 6,
+      "name": "walfa",
+      "address": "bhub",
+      "rating": "3.",
+      "email": "ware@gmail.com"
+    },
+    {
+      "id": 7,
+      "name": "walfa",
+      "address": "bhurb",
+      "rating": "3.5",
+      "email": "ware@gmal.com"
+    },
+    {
+      "name": "KFC",
+      "email": "KFC@gmail.com",
+      "rating": "3.2",
+      "address": "Ranchi",
+      "id": 8
     }
   ]
 }
