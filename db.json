@@ -85,13 +85,6 @@
       "id": 12
     },
     {
-      "name": "subhamnXg",
-      "email": "subham@gmail.com",
-      "rating": "4.0",
-      "address": "tungri Chaibasa",
-      "id": 13
-    },
-    {
       "name": "subhamBar",
       "email": "SubhamBar@gmail.com",
       "rating": "4.0",
@@ -99,18 +92,25 @@
       "id": 14
     },
     {
-      "name": "Sakhshi Club",
-      "email": "SakhshiClub@gmail.com",
-      "rating": "43.0",
-      "address": "Bengal",
+      "name": "weqw",
+      "email": "qweqw",
+      "rating": "qweqw",
+      "address": "qwewq",
       "id": 15
     },
     {
-      "name": "subhamnXg",
-      "email": "subham@gmail.com",
-      "rating": "4.0",
-      "address": "tungri Chaibasa",
+      "name": "weq",
+      "email": "qwe",
+      "rating": "weqw",
+      "address": "weqw",
       "id": 16
+    },
+    {
+      "name": "wqeqw",
+      "email": "weqw",
+      "rating": "wewq",
+      "address": "weqw",
+      "id": 17
     }
   ]
 }

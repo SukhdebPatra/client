@@ -2,11 +2,19 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 
+
 import { Link } from "react-router-dom";
 
 const RestoList = () => {
   const [list, setList] = useState([]);
 
+
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  // api call 
   const fetchData = () => {
     fetch("http://localhost:3000/restaurant")
       .then((response) => {
@@ -17,9 +25,23 @@ const RestoList = () => {
       });
   };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+ 
+
+// Delete 1 data
+  const deleteUser=(id)=>{
+   fetch(`http://localhost:3000/restaurant/${id}`,{
+     method:'DELETE'
+   }).then((result)=>{
+     result.json().then((res)=>{
+       console.log(res);
+       fetchData();
+
+     })
+   })
+
+  }
+
+  
   return (
     <>
       <div className="App">
@@ -51,9 +73,9 @@ const RestoList = () => {
                     <Link to={"/update/" + ele.id}>
                       <FontAwesomeIcon icon={faEdit} color="yellow" />
                     </Link>
-                    <Link to={"/update/" + ele.id}>
+                    <span onClick={()=>deleteUser(ele.id)}>
                       <FontAwesomeIcon icon={faTrash} color="red"  />
-                    </Link>
+                    </span>
                   </td>
                 </tr>
               );
