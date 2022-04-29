@@ -43,11 +43,11 @@
       "id": 6
     },
     {
-      "id": 7,
       "name": "walfa",
-      "address": "bhurb",
+      "email": "ware@gmal.com",
       "rating": "3.5",
-      "email": "ware@gmal.com"
+      "address": "bhubneswer",
+      "id": 7
     },
     {
       "name": "KFC",
@@ -79,10 +79,17 @@
     },
     {
       "name": "raja Hotel",
-      "email": "hotel@gmail.com",
+      "email": "hotel1@gmail.com",
       "rating": "2.0",
       "address": "badibazar",
       "id": 12
+    },
+    {
+      "name": "subhamnXg",
+      "email": "subham@gmail.com",
+      "rating": "4.0",
+      "address": "tungri Chaibasa",
+      "id": 13
     }
   ]
 }

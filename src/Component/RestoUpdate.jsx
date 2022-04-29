@@ -36,6 +36,7 @@ const RestoUpdate = () => {
     });
     result = await result.json();
     console.log(result);
+    nevigate("/list");
   };
 
   return (

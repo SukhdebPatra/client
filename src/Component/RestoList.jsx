@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faEdit,faTrash} from '@fortawesome/free-solid-svg-icons'
+
 
 import {Link} from 'react-router-dom'
 
@@ -48,7 +51,8 @@ const RestoList = () => {
                 <td>{ele.address}</td>
                 <td>{ele.rating}</td>
                 <td>{ele.email}</td>
-                <td> <Link  to={"/update/"+ele.id}>Edit</Link></td>
+                <td> <Link  to={"/update/"+ele.id}><FontAwesomeIcon icon={faEdit }color='yellow'/></Link>
+                <Link  to={"/update/"+ele.id}><FontAwesomeIcon icon={faTrash }color='red'/></Link></td>
               </tr>
              
             )
