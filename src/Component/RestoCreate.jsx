@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import RestoUpdate from "./RestoUpdate";
+
 
 const RestoCreate = () => {
   const [name, setName] = useState("");

@@ -36,11 +36,11 @@
       "email": "SB@gmail.com"
     },
     {
-      "id": 6,
       "name": "walfa",
+      "email": "ware@gmail.com",
+      "rating": "3.0",
       "address": "bhub",
-      "rating": "3.",
-      "email": "ware@gmail.com"
+      "id": 6
     },
     {
       "id": 7,
@@ -71,10 +71,10 @@
       "id": 10
     },
     {
-      "name": "Sumit chaha chai wale",
-      "email": "Sumitchacha@gmail.com",
-      "rating": "1.0",
-      "address": "chaibasa turitola",
+      "name": "Beena Hot Dogs",
+      "email": "Beenahotdogs@gmail.com",
+      "rating": "6.0",
+      "address": "Chaibasa Bandhpara",
       "id": 11
     },
     {
