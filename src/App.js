@@ -12,20 +12,19 @@ import Home from './Component/Home';
 
 function App() {
   return (
+    <>
+
     <BrowserRouter>
-      <Home />
-
+    <Home />
       <Routes>
-
-
         <Route path='/Create' element={<RestoCreate />} />
-
         <Route path='/List' element={<RestoList />} />
         <Route path='/Search' element={<RestoSearch />} />
-        <Route path='/Update/:id'element={<RestoUpdate />} />
+        <Route path='/Update/:id' element={<RestoUpdate />} />
 
       </Routes>
     </BrowserRouter>
+    </>
   );
 }
 

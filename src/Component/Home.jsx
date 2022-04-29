@@ -7,6 +7,8 @@ import {
   faHomeUser,
   faHeartBroken,
 } from "@fortawesome/free-solid-svg-icons";
+import Marquee from "react-fast-marquee";
+
 
 const Home = () => {
   return (
@@ -45,6 +47,9 @@ const Home = () => {
           </ul>
         </div>
       </nav>
+     <Marquee gradientColor={[66, 135, 245]} speed={[70]}>
+      Welcome To A Website, Here you can find World's best Restaurant...
+     </Marquee>
     </>
   );
 };
