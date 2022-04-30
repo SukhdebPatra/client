@@ -71,13 +71,6 @@
       "id": 10
     },
     {
-      "name": "Beena Hot Dogs",
-      "email": "Beenahotdogs@gmail.com",
-      "rating": "6.0",
-      "address": "Chaibasa Bandhpara",
-      "id": 11
-    },
-    {
       "name": "raja Hotel",
       "email": "hotel1@gmail.com",
       "rating": "2.0",
@@ -92,25 +85,11 @@
       "id": 14
     },
     {
-      "name": "weqw",
-      "email": "qweqw",
-      "rating": "qweqw",
-      "address": "qwewq",
-      "id": 15
-    },
-    {
-      "name": "weq",
-      "email": "qwe",
-      "rating": "weqw",
-      "address": "weqw",
+      "name": "ew",
+      "email": "ew",
+      "rating": "e",
+      "address": "we",
       "id": 16
-    },
-    {
-      "name": "wqeqw",
-      "email": "weqw",
-      "rating": "wewq",
-      "address": "weqw",
-      "id": 17
     }
   ]
 }

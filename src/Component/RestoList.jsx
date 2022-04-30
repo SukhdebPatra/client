@@ -34,7 +34,7 @@ const RestoList = () => {
    }).then((result)=>{
      result.json().then((res)=>{
        console.log(res);
-       fetchData();
+       fetchData(id);
 
      })
    })
@@ -70,10 +70,10 @@ const RestoList = () => {
                   <td>{ele.email}</td>
                   <td>
                    
-                    <Link to={"/update/" + ele.id}>
+                    <Link cursor='pointer'  className="px-5" to={"/update/" + ele.id}>
                       <FontAwesomeIcon icon={faEdit} color="yellow" />
                     </Link>
-                    <span onClick={()=>deleteUser(ele.id)}>
+                    <span  className="px-5" onClick={()=>deleteUser(ele.id)}>
                       <FontAwesomeIcon icon={faTrash} color="red"  />
                     </span>
                   </td>
