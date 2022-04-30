@@ -1,8 +1,12 @@
 import React,{useState} from "react";
+import { useNavigate } from "react-router-dom";
 
-const LogIn = () => {
+
+const LogIn = (props) => {
     const [name, setName] = useState('')
 const [password, setPassword] = useState('')
+let nevigate=useNavigate();
+
 
 const LogIn=(e)=>{
     e.preventDefault();
@@ -11,6 +15,7 @@ const LogIn=(e)=>{
         data.json().then((res)=>{
             console.log(res);
             if(res.length>0){
+             nevigate('/List')
 
             }else{
                 alert('plz check user name and password')

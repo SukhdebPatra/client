@@ -21,7 +21,9 @@ function App() {
         <Route path='/List' element={<RestoList />} />
         <Route path='/Search' element={<RestoSearch />} />
         <Route path='/Update/:id' element={<RestoUpdate />} />
-        <Route path='/login' element={<LogIn />} />
+        <Route path='/login' render={props=>(
+          <LogIn{...props}/>
+        )} element={<LogIn />} />
 
       </Routes>
     </BrowserRouter>
