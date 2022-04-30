@@ -6,6 +6,7 @@ import {
   faSearch,
   faHomeUser,
   faHeartBroken,
+  faUser
 } from "@fortawesome/free-solid-svg-icons";
 import Marquee from "react-fast-marquee";
 
@@ -23,6 +24,12 @@ const Home = () => {
               </Link>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/Login">
+                <FontAwesomeIcon icon={ faUser} color="blue" />
+                LogIN
+              </Link>
+            </li>
+            <li className="nav-item">
               <Link className="nav-link" to="/create">
                 <FontAwesomeIcon icon={faHeartBroken} color="blue" />
                 Create
@@ -34,6 +41,7 @@ const Home = () => {
                 RestroList
               </Link>
             </li>
+            
 
             <li className="nav-item">
               <Link className="nav-link" to="/search">

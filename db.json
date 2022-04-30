@@ -1,4 +1,10 @@
 {
+  "login": [
+    {
+      "name": "anil",
+      "password": "anil123"
+    }
+  ],
   "restaurant": [
     {
       "id": 1,
@@ -22,32 +28,11 @@
       "email": "MacDonald@gmail.com"
     },
     {
-      "id": 4,
-      "name": "walfare",
-      "address": "bhubneswer",
-      "rating": "3.0",
-      "email": "walfare@gmail.com"
-    },
-    {
       "id": 5,
       "name": "SBrstro",
       "address": "chaibasa",
       "rating": "5.0",
       "email": "SB@gmail.com"
-    },
-    {
-      "name": "walfa",
-      "email": "ware@gmail.com",
-      "rating": "3.0",
-      "address": "bhub",
-      "id": 6
-    },
-    {
-      "name": "walfa",
-      "email": "ware@gmal.com",
-      "rating": "3.5",
-      "address": "bhubneswer",
-      "id": 7
     },
     {
       "name": "KFC",
@@ -78,18 +63,32 @@
       "id": 12
     },
     {
-      "name": "subhamBar",
-      "email": "SubhamBar@gmail.com",
-      "rating": "4.0",
-      "address": "Banglore",
+      "name": "ssa",
+      "email": "asa",
+      "rating": "asas",
+      "address": "asas",
+      "id": 13
+    },
+    {
+      "name": "saas",
+      "email": "as",
+      "rating": "",
+      "address": "",
       "id": 14
     },
     {
-      "name": "ew",
-      "email": "ew",
-      "rating": "e",
-      "address": "we",
-      "id": 16
+      "name": "sasa",
+      "email": "saas",
+      "rating": "as",
+      "address": "saas",
+      "id": 17
+    },
+    {
+      "name": "sss",
+      "email": "sss",
+      "rating": "sss",
+      "address": "sss",
+      "id": 18
     }
   ]
 }

@@ -2,10 +2,14 @@ import React, { useState } from "react";
 import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
+import {useNavigate} from 'react-router-dom'
 
 
 const RestoSearch = () => {
   const [searchData, setSearchData] = useState("");
+  const [lastSearch, setLastSearch] = useState('')
+
+  const nevigate=useNavigate();
 
   // const search=(key)=>{
   //   console.log(key);
@@ -19,16 +23,44 @@ const RestoSearch = () => {
   // }
 
   const serachHandler = async (e) => {
+    setLastSearch({lastSearch:e})
     console.log(e.target.value);
     let key = e.target.value;
     let result = await fetch(`http://localhost:3000/restaurant?q=${key}`);
     result = await result.json();
     if (result) {
       setSearchData(result);
+      setLastSearch(lastSearch)
+    
+      
     }
   };
+
+
+  const deleteUser=(id)=>{
+    fetch(`http://localhost:3000/restaurant/${id}`,{
+      method:'DELETE'
+    }).then((result)=>{
+      result.json().then((res)=>{
+        console.log(res);
+        setLastSearch(id);
+        setLastSearch(lastSearch)
+        nevigate("/list");
+        
+       
+
+ 
+      })
+    })
+ 
+   }
   return (
     <div>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+
+         
       <h1> RestoSearch</h1>
       {/* <input type="text" onChange={(e)=>search(e.target.value)} /> */}
       <div>
@@ -85,6 +117,9 @@ const RestoSearch = () => {
               </div>
             ) : null}
          
+      </div>
+      </div>
+        </div>
       </div>
     </div>
   );

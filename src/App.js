@@ -7,7 +7,7 @@ import RestoUpdate from './Component/RestoUpdate'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Component/Home';
-
+import LogIn from './Component/LogIn';
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
         <Route path='/List' element={<RestoList />} />
         <Route path='/Search' element={<RestoSearch />} />
         <Route path='/Update/:id' element={<RestoUpdate />} />
+        <Route path='/login' element={<LogIn />} />
 
       </Routes>
     </BrowserRouter>
