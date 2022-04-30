@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const RestoUpdate = () => {
   const [name, setName] = useState("");
@@ -41,6 +42,7 @@ const RestoUpdate = () => {
 
   return (
     <div>
+      <Navbar/>
       <h1>RestoUpdate</h1>
       <form>
         <input

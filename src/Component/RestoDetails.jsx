@@ -1,9 +1,14 @@
 import React from 'react'
+import Navbar from './Navbar'
 
 
 const RestoDetails = () => {
   return (
-    <div>RestoDetails</div>
+
+    <div>
+      <Navbar/>
+     <h1> RestoDetails</h1>
+      </div>
   )
 }
 

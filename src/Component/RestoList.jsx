@@ -4,6 +4,7 @@ import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const RestoList = () => {
   const [list, setList] = useState([]);
@@ -45,6 +46,7 @@ const RestoList = () => {
   return (
     <>
       <div className="App">
+        <Navbar/>
         <h1 className="text-white  bg-info">Restaurant List</h1>
       </div>
       <div>

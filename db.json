@@ -1,8 +1,8 @@
 {
   "login": [
     {
-      "name": "anil",
-      "password": "anil123"
+      "name": "SP",
+      "password": "sukhdeb123"
     }
   ],
   "restaurant": [
@@ -89,6 +89,13 @@
       "rating": "sss",
       "address": "sss",
       "id": 18
+    },
+    {
+      "name": "fr",
+      "email": "",
+      "rating": "",
+      "address": "",
+      "id": 19
     }
   ]
 }

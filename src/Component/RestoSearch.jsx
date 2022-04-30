@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
 import {useNavigate} from 'react-router-dom'
+import Navbar from "./Navbar";
 
 
 const RestoSearch = () => {
@@ -56,6 +57,7 @@ const RestoSearch = () => {
    }
   return (
     <div>
+      <Navbar/>
       <div className="container">
         <div className="row">
           <div className="col">

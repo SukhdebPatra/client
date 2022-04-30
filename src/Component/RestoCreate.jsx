@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
 
 const RestoCreate = () => {
@@ -26,6 +27,7 @@ const RestoCreate = () => {
 
   return (
     <div className="App">
+      <Navbar/>
       <h1 className="text-primary">Create Restaurant</h1>
       <form>
         <input

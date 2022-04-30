@@ -1,5 +1,6 @@
 import React,{useState} from "react";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
 
 const LogIn = (props) => {
@@ -15,6 +16,7 @@ const LogIn=(e)=>{
         data.json().then((res)=>{
             console.log(res);
             if(res.length>0){
+                localStorage.setItem('login',JSON.stringify(res))
              nevigate('/List')
 
             }else{
@@ -27,6 +29,7 @@ const LogIn=(e)=>{
 }
     return (
     <div>
+        <Navbar/>
       <h1>LogIn</h1>
       <form action="">
       <input type="text" value={name}  onChange={(e)=>setName(e.target.value)} />
