@@ -7,6 +7,8 @@ import {
   faHomeUser,
   faHeartBroken,
   faUser,
+  faSign,
+  faSignOut
 } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
@@ -47,13 +49,13 @@ const Navbar = () => {
             {localStorage.getItem("login") ? (
               <li className="nav-item">
                 <Link className="nav-link" to="/logout">
-                  <FontAwesomeIcon icon={faUser} color="blue" />
+                  <FontAwesomeIcon icon={faSignOut} color="blue" />
                   LogOut
                 </Link>
               </li>
             ) : (
               <Link className="nav-link" to="/login">
-                <FontAwesomeIcon icon={faUser} color="blue" />
+                <FontAwesomeIcon icon={faSign} color="blue" />
                 LogIN
               </Link>
             )}

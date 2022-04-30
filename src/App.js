@@ -9,28 +9,40 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Component/Home';
 import LogIn from './Component/LogIn';
 import LogOut from './Component/LogOut';
-
+import PrivateComponent from './Component/PrivateComponent'
 
 function App() {
   return (
     <>
 
-    <BrowserRouter>
-   
-  
-      <Routes>
-      <Route path='/' element={<Home />} />
-        <Route path='/Create' element={<RestoCreate />} />
-        <Route path='/List' element={<RestoList />} />
-        <Route path='/Search' element={<RestoSearch />} />
-        <Route path='/Update/:id' element={<RestoUpdate />} />
-        <Route path='/login'  element={<LogIn />} />
+      <BrowserRouter>
 
 
-           <Route path='/logout' element={<LogOut />} />
+        <Routes>
+        <Route element={<PrivateComponent />}>
 
-      </Routes>
-    </BrowserRouter>
+          <Route path='/Create' element={<RestoCreate />} />
+          <Route path='/List' element={<RestoList />} />
+          <Route path='/Search' element={<RestoSearch />} />
+          <Route path='/Update/:id' element={<RestoUpdate />} />
+          <Route path='/' element={<Home />} />
+          </Route>
+          <Route path='/login' element={<LogIn />} />
+
+
+          <Route path='/logout' element={<LogOut />} />
+         
+
+         
+          {/* <Route path='/login' element={<Protected> <Home/> </Protected>}/> */}
+
+
+
+
+        </Routes>
+
+
+      </BrowserRouter>
     </>
   );
 }
