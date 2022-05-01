@@ -19,20 +19,20 @@ const Navbar = () => {
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link className="nav-link" to="/">
-                <FontAwesomeIcon icon={faHomeUser} color="blue" />
+                <FontAwesomeIcon icon={faHomeUser} color="limegreen" />
                 Home
               </Link>
             </li>
 
             <li className="nav-item">
               <Link className="nav-link" to="/create">
-                <FontAwesomeIcon icon={faHeartBroken} color="blue" />
+                <FontAwesomeIcon icon={faHeartBroken} color="red" />
                 Create
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/List">
-                <FontAwesomeIcon icon={faList12} color="blue" />
+                <FontAwesomeIcon icon={faList12} color="green" />
                 RestroList
               </Link>
             </li>
@@ -49,7 +49,7 @@ const Navbar = () => {
             {localStorage.getItem("login") ? (
               <li className="nav-item">
                 <Link className="nav-link" to="/logout">
-                  <FontAwesomeIcon icon={faSignOut} color="blue" />
+                  <FontAwesomeIcon icon={faSignOut} color="yellow" />
                   LogOut
                 </Link>
               </li>
