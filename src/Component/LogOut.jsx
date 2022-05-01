@@ -1,16 +1,19 @@
 import React from 'react'
-import { useNavigate } from "react-router-dom";
+import { useNavigate,Navigate } from "react-router-dom";
 import Navbar from './Navbar';
 
 const LogOut = () => {
-    const nevigate=useNavigate();
-  let clare=  localStorage.clear()
-  if(clare){
-      nevigate('/login');
-  }
+    // const nevigate=useNavigate();
+  localStorage.clear()
+//   if(clare){
+//       nevigate('/login');
+//   }
+ 
     
   return (
       <>
+      <Navigate to='/login'/>
+
       <Navbar/>
       </>
   )

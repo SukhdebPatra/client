@@ -6,7 +6,7 @@ import {
   faSearch,
   faHomeUser,
   faHeartBroken,
-  faUser,
+  
   faSign,
   faSignOut
 } from "@fortawesome/free-solid-svg-icons";
@@ -32,33 +32,33 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/List">
-                <FontAwesomeIcon icon={faList12} color="green" />
+                <FontAwesomeIcon icon={faList12} color="#f2118d" />
                 RestroList
               </Link>
             </li>
 
             <li className="nav-item">
               <Link className="nav-link" to="/search">
-                <FontAwesomeIcon icon={faSearch} color="blue" />
+                <FontAwesomeIcon icon={faSearch} color="#087afc" />
                 Search
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/update/:id"></Link>
             </li>
-            {localStorage.getItem("login") ? (
+            {localStorage.getItem("login") ? 
               <li className="nav-item">
                 <Link className="nav-link" to="/logout">
-                  <FontAwesomeIcon icon={faSignOut} color="yellow" />
+                  <FontAwesomeIcon icon={faSignOut} color="#f5dd07" />
                   LogOut
                 </Link>
               </li>
-            ) : (
+             : 
               <Link className="nav-link" to="/login">
                 <FontAwesomeIcon icon={faSign} color="blue" />
                 LogIN
               </Link>
-            )}
+            }
           </ul>
         </div>
       </nav>

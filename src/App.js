@@ -10,6 +10,7 @@ import Home from './Component/Home';
 import LogIn from './Component/LogIn';
 import LogOut from './Component/LogOut';
 import PrivateComponent from './Component/PrivateComponent'
+import Hello from './Component/Hello';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
 
 
           <Route path='/logout' element={<LogOut />} />
+          <Route path='/hello' element={<Hello />} />
          
 
          

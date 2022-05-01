@@ -1,6 +1,9 @@
 import React, { useState } from "react";
+import Marquee from "react-fast-marquee";
 import { useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
+import axios from 'axios'
+import Hello from "./Hello";
 
 const LogIn = (props) => {
   const [name, setName] = useState("");
@@ -9,44 +12,73 @@ const LogIn = (props) => {
 
   const LogIn = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3000/login?q=" + name).then((data) => {
-      data.json().then((res) => {
-        console.log(res);
-        if (res.length > 0) {
-          localStorage.setItem("login", JSON.stringify(res));
-          nevigate("/List");
-        } else {
-          alert("plz check user name and password");
-        }
-      });
-    });
-    console.log(name, password);
+    
+    axios.get("http://localhost:3000/login?q=" + name).then((res) => {
+          
+   
+   
+    if(res.data && res.data.length){
+        console.log('success');  
+        console.log(res.data[0].name);
+        localStorage.setItem("login",JSON.stringify(res));
+        nevigate("/List");
+
+
+    }
+    else{
+        console.log('not found');
+    }
+
+
+
+
+
+    //   data.json().then((res) => {
+    //     console.log(res);
+    //     if (res.length>0) {
+    //       localStorage.setItem("login",JSON.stringify(res));
+    //       nevigate("/List");
+    //     } else {
+    //       alert("plz check user name and password");
+    //     }
+    //   });
+    }).catch((error)=>{
+
+        console.log('error');
+        console.log(error);
+
+    })
+   
   };
   return (
     <div>
       <Navbar />
-      <h1 className="App ">Login</h1>
+      
       <center>
+          <Marquee pauseOnHover speed={[60]}  gradientColor={[153,603,193]} gradientWidth={200}>
+              <h2 className="text-secondary">You Have to Enter Admin's UserName And Password For Login 😂😂😂</h2>
+          </Marquee>
         <div className="contaniner">
           <div className="row ">
             <div className="col">
+            <h1 className="mt-5 mb-5 text-danger ">Login</h1>
               <form action="">
                 <input
                   className="form-control col-sm-4"
                   type="text"
-                  value={name}
+                  value={name} placeholder='Enter Name'
                   onChange={(e) => setName(e.target.value)}
                 />
                 <br /> <br />
                 <input
                   className="form-control col-sm-4"
                   type="password"
-                  value={password}
+                  value={password}  placeholder='Enter Password'
                   onChange={(e) => setPassword(e.target.value)}
-                />{" "}
+                />
                 <br /> <br />
                 <button className="btn btn-primary mb-2" onClick={LogIn}>
-                  LogIn
+                  Submit
                 </button>
               </form>
             </div>
