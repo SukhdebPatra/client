@@ -13,7 +13,7 @@ const LogIn = (props) => {
   const LogIn = (e) => {
     e.preventDefault();
     
-    axios.get("http://localhost:3000/login?q=" + name).then((res) => {
+    axios.get("http://localhost:3000/login?q=" + name ).then((res) => {
           
    
    
@@ -27,6 +27,7 @@ const LogIn = (props) => {
     }
     else{
         console.log('not found');
+        alert('User Not Found☹')
     }
 
 
